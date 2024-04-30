@@ -11,6 +11,11 @@ Thank you for participating in the workshop! Let's recap some of the key takeway
 
 ## Next Steps
 
+Now that you have a working Nutanix cluster and are able to access the Prism UI, we recommend diving into the learning resources provided by Nutanix:
+
+* Step through the [Nutanix cloud-init Lab](https://www.nutanix.dev/lab_content/cloud-init-lab/) to deploy a VM on your Nutanix cluster
+* Check out [Nutanix University on YouTube](https://www.youtube.com/@NutanixUniversity) for guided walkthroughs of Nutanix use cases
+
 ## Resources
 
 Here are a few other resources to look at to continue your Equinix Metal journey:

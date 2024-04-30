@@ -6,13 +6,20 @@ Equinix Labs offers workshops, proof of concepts, and tools for exploring and bo
 
 ## About the workshop
 
+In this workshop you will learn to deploy a Nutanix cluster on Equinix Metal.
+
 The goals of this workshop are:
 
-* Become familiar with the Equinix digital infrastructure
-* Provision the infrastructure services
-* Start and test out a sample application.
+* Learn about options for deploying Nutanix on Equinix Metal
+* Provision a Nutanix cluster on Equinix Metal using Terraform
+* Log in to the Prism control plane for your Nutanix cluster
+* Learn about follow-up labs to explore the functionality of your Nutanix cluster
 
 ## Workshop agenda
+
+<!--
+TODO: Update the agenda once the workshop format is settled
+-->
 
 This workshop is split into four parts:
 
