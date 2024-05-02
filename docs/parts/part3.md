@@ -25,7 +25,7 @@ Now that the SSH tunnel is open, you can access the Prism UI from your computer 
 TODO: a screenshot here?
 -->
 
-Log in to the Prism UI using the default credentials (TODO: put them here? link to where they are?).  You will be forced to change the password when you first log in.  After changing the password, you will be automatically logged out.
+Log in to the Prism UI using the default credentials [found here on the Nutanix Support Portal](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_7:app-admin-cvm-access-c.html). You will be forced to change the password when you first log in.  After changing the password, you will be automatically logged out.
 
 <!--
 TODO: another screenshot?
