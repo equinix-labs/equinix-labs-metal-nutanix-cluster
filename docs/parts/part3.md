@@ -11,7 +11,7 @@ The Terraform module provides an output called `ssh_forward_command`.  This outp
 
 To set up the SSH tunnel, execute the value of `ssh_forward_command` as a shell command:
 
-```
+```sh
 $(terraform output -raw ssh_forward_command)
 ```
 
