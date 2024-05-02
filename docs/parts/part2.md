@@ -1,5 +1,5 @@
 <!-- See https://squidfunk.github.io/mkdocs-material/reference/ -->
-# Part 2: Provision
+# Part 2: Provision a Nutanix cluster
 
 Now that our local environment is set up, we are ready to use Terraform to provision our Nutanix cluster.  The module we are using provides some default behavior that we recommend following for this workshop.  It creates a new Equinix Metal project for your cluster and a new VLAN in that cluster for private networking.  It deploys 3 Nutanix nodes with private IPs and 1 bastion server that has a public IP address and can be used to access the Nutanix nodes via SSH.  The Nutanix nodes are deployed to on-demand m3.large.x86 instances.  These defaults--among other behaviors--can be changed depending on your workshop needs; we will discuss those options later in the workshop.
 
@@ -50,11 +50,14 @@ If any of your Nutanix nodes fails to provision, wait for Terraform to finish ru
 
 ### 3. Verify
 
-## Discussion
+Once Terraform has finished running, you can verify that your Nutanix cluster has been provisioned by checking the Equinix Metal console. You should see a new project with the name you specified in your `terraform.tfvars` file. Inside that project, you should see a new VLAN and 4 instances: 3 Nutanix nodes and 1 bastion server.
+Additionally, you can connect to the bastion host to ensure it's up and available. The Terraform module provides several outputs you can use to connect to the bastion host. Run the following command to connect to the bastion host:
 
-<!--
-  TODO: fill in discussion points if we need them here
--->
+```sh
+ssh -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip)
+```
+
+## Discussion
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
