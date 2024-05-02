@@ -15,9 +15,9 @@ TODO: duplicate the contents of that file here for reference?
 
 For this workshop, we want to use the default values of most variables so we only need to specify values for the following variables:
 
-* `metal_auth_token` so that Terraform can create resources in Equinix Metal on your behalf
-* `metal_project_name` so that it is easy to find your Nutanix cluster in the Metal console or CLI
-* `metal_metro` so that Terraform knows where to deploy your infrastructure.  We recommend deploying to the Seoul metro (`sl`) for the best experience.
+- `metal_auth_token` so that Terraform can create resources in Equinix Metal on your behalf
+- `metal_project_name` so that it is easy to find your Nutanix cluster in the Metal console or CLI
+- `metal_metro` so that Terraform knows where to deploy your infrastructure.  We recommend deploying to the Seoul metro (`sl`) for the best experience.
 
 Create a `terraform.tfvars` file that sets the variables mentioned above.  Your `terraform.tfvars` should look something like this:
 
@@ -58,6 +58,6 @@ If any of your Nutanix nodes fails to provision, wait for Terraform to finish ru
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
-* How can you reduce the possibility of provisioning failures for Nutanix nodes?
-* Can you change the version of Nutanix that is deployed?
+- How can you reduce the possibility of provisioning failures for Nutanix nodes?
+- Can you change the version of Nutanix that is deployed?
 

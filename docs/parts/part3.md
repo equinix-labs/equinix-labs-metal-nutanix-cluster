@@ -1,5 +1,5 @@
 <!-- See https://squidfunk.github.io/mkdocs-material/reference/ -->
-# Part 3: Accessing the Prism UI
+# Part 3: Access the Prism UI
 
 ## Steps
 
@@ -43,6 +43,5 @@ TODO: point out some Prism UI things here?  Cluster status, licensing warnings, 
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
-* ...
-* ...
+- Can you use the Nutanix Terraform provider with your cluster?
 

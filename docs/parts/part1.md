@@ -36,4 +36,4 @@ terraform init
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
-* Why does Terraform need an Equinix Metal API token?
+- Why does Terraform need an Equinix Metal API token?

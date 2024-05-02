@@ -51,5 +51,5 @@ When your VM finishes powering on, click the "Launch Console" button to open the
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
-* Other than VMs, what resources can be created in the Prism UI?
-* Can you connect to VMs on a Nutanix cluster without going through a bastion host?
+- Other than VMs, what resources can be created in the Prism UI?
+- Can you connect to VMs on a Nutanix cluster without going through a bastion host?
