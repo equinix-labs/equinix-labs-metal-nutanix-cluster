@@ -104,5 +104,5 @@ Before proceeding to the next part let's take a few minutes to discuss what we d
 
 - What is Prism Central?
 - What can you do with Prism Central that you couldn't do with just Prism?
-<!-- - What is the LCM and why is it important to keep it updated?
- -->- Why do we need to use a new SSH forward command after installing Prism Central?
+- What is the LCM and why is it important to keep it updated?
+- Why do we need to use a new SSH forward command after installing Prism Central?
