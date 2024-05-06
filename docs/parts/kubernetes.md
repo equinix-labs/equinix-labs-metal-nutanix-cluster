@@ -18,17 +18,17 @@ We recommend updating everything the Nutanix Kubernetes Engine.
 
 ### 3. Deploy Nutanix Kubernetes Engine
 
-Click on the three lined menu in the upper left of the Prism Central UI and select `Services` -> `Kubernetes`. Then click `Enable Karbon`. After awhile Karbon will start up and you can click `Download OS Image`. Wait until the `Download Status` is `Downloaded`.
+Click on the three lined menu in the upper left of the Prism Central UI and select `Services` -> `Kubernetes`. Then click `Enable Kubernetes`. After awhile Karbon will start up and you can click `Download OS Image`. Wait until the `Download Status` is `Downloaded`.
 
-![Karbon Download Status](../images/karbon-download-status.png)
+![Karbon Download Status](../images/nke-download-status.png)
 
 Now back to Clusters on the left and click `Create Kubernetes Cluster`.
 
-![Karbon Create Cluster](../images/karbon-create-cluster.png)
+![Karbon Create Cluster](../images/nke-create-cluster.png)
 
 Choose `Development Cluster` as the type and click `Next`.
 
-![Karbon Development Cluster](../images/karbon-development-cluster.png)
+![Karbon Development Cluster](../images/nke-development-cluster.png)
 
 Name it `k8s-demo` and click `Next`.
 
@@ -53,15 +53,13 @@ Click `Create`. You may need to refresh to see the cluster creation status. Now 
 Congrats, you now have a kubernetes cluster on your Nutanix cluster.
 Download the kuberconfig file via the browser:
 
-<screenshot>
+![Download Kubeconfig](../images/download-kubeconfig.png)
 
 Transfer it to your bastion host:
 
 ```sh
-scp kubeconfig -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip):~/kubeconfig
+scp k8s-demo-kubectl.cfg -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip):~/kubeconfig
 ```
-
-<screenshot>
 
 ### 5. Access the Kubernetes cluster
 

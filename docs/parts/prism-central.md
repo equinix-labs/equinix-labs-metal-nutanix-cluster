@@ -10,11 +10,13 @@ Many of the more powerful capabilities of Nutanix are only unlocked after config
 
 Let's return to the Prism UI from your computer at `https://localhost:9440`. Note that the Prism UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
 
-### 2. Set up ISCSI IP and NTP for the Cluster
+### 2. Set up Virtual IP, ISCSI IP, and NTP for the Cluster
 
-Prism Central requires an iSCSI IP address for the cluster. These addresses are used to provide storage to the Prism Central service.
+Prism Central requires an iSCSI IP address for the cluster. This address is used to provide storage to the Prism Central service.
 
-Click on the gear icon in the upper right corner of the Prism UI. Then choose `Cluster Details` and enter `192.168.103.253` for the ISCSI Data Services IP and click `Save`.
+In the next part we'll be installing a service that requires the cluster have a virtual IP as well as NTP configured, so we'll be configuring that now as well.
+
+Click on the gear icon in the upper right corner of the Prism UI. Then choose `Cluster Details` and enter `192.168.103.254` for the Virtual IP and `192.168.103.253` for the ISCSI Data Services IP and and click `Save`.
 
 ![Cluster Details](../images/iscsi-ip.png)
 
