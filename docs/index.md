@@ -25,9 +25,8 @@ This workshop is split into four parts:
 
 | Part | Title | Duration |
 | - | - | - |
-| 1 | Setup | 10 minutes |
-| 2 | Provision a Nutanix cluster | 40 minutes |
-| 3 | Access the Prism UI | 10 minutes |
-| 4 | Create a VM | 15 minutes |
-| 5 | Conclusion | 2 minutes |
-
+| 1 | [Setup](parts/setup.md) | 10 minutes |
+| 2 | [Provision a Nutanix cluster](parts/provision_nutanix_cluster.md) | 40 minutes |
+| 3 | [Access the Prism UI](parts/access_prism_ui.md) | 10 minutes |
+| 4 | [Create a VM](parts/create_a_vm.md) | 15 minutes |
+| 5 | [Conclusion](parts/conclusion.md) | 2 minutes |
