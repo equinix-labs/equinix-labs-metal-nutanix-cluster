@@ -5,7 +5,7 @@ To get a sense of the capabilities of our Nutanix cluster, we will now deploy a 
 
 In order to connect to the VM console, we need to deploy a VM that has an operating system (OS) installed.  In a Nutanix cluter, this means we have to create an OS image that can be added to a VM on creation.
 
-In this workshop, we will use an Ubuntu cloud image.  We are going to use [noble-server-cloudimg-arm64.img](https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-arm64.img) in the steps below, but you can [browse the complete directory of images](https://cloud-images.ubuntu.com/) and choose a different image if desired.
+In this workshop, we will use an Ubuntu cloud image.  We are going to use [ubuntu-24.04-minimal-cloudimg-amd64.img](https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img) in the steps below, but you can [browse the complete directory of images](https://cloud-images.ubuntu.com/) and choose a different image if desired.
 
 ## Steps
 
@@ -16,7 +16,7 @@ Click the drop-down menu in the top navigation bar in your Prism UI and select t
 In the left-hand navigation, find the "Image Configuration" item and click it.
 
 Click the "Upload Image" button and fill out the form
-that pops up.  Under "Image Source" on the form, select "From URL" and enter `https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-arm64.img` in the form field (or specify a different image URL of your choosing).
+that pops up.  Under "Image Source" on the form, select "From URL" and enter `https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img` in the form field (or specify a different image URL of your choosing).
 
 ### 2. Create a VM
 
