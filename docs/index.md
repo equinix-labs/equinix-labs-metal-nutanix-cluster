@@ -29,4 +29,6 @@ This workshop is split into four parts:
 | 2    | [Provision a Nutanix cluster](parts/2-provision_nutanix_cluster.md) | 40 minutes |
 | 3    | [Access the Prism UI](parts/3-access_prism_ui.md)                   | 10 minutes |
 | 4    | [Create a VM](parts/4-create_a_vm.md)                               | 15 minutes |
+| 5    | [Prism Central](parts/5-prism-central.md)                           | 30 minutes |
+| 6    | [Nutanix Kubernetes Engine](parts/6-kubernetes.md)                  | 30 minutes |
 | 5    | [Conclusion](parts/conclusion.md)                                   | 2 minutes  |

@@ -10,23 +10,45 @@ Nutanix Kubernetes Engine (NKE) is a managed Kubernetes service that simplifies 
 
 Let's login to the Prism Central UI from your computer at `https://localhost:9440`. Note that the Prism UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
 
-### 2. Deploy Nutanix Kubernetes Engine
+### 2. Update the Cluster
 
-Click on the gear icon in the upper right corner of the Prism UI and select `Kubernetes Clusters`. Click `Create Kubernetes Cluster`. Choose `Development Cluster` as the type and name it `k8s-demo`.
+Navigate to LCM take an Invenotry, wait for it to finish and then Navigate to Software -> Updates.
 
-<screenshot>
+We recommend updating everything the Nutanix Kubernetes Engine.
 
-Leave the Node Network as `VM Network` and the number of workers as 1.
+### 3. Deploy Nutanix Kubernetes Engine
 
-<screenshot>
+Click on the three lined menu in the upper left of the Prism Central UI and select `Services` -> `Kubernetes`. Then click `Enable Karbon`. After awhile Karbon will start up and you can click `Download OS Image`. Wait until the `Download Status` is `Downloaded`.
 
-We'll use the default networking provider of `calico` and the default storage class of `default`.
+![Karbon Download Status](../images/karbon-download-status.png)
 
-<screenshot>
+Now back to Clusters on the left and click `Create Kubernetes Cluster`.
 
-Click `create`. You may need to refresh to see the cluster creation status.
+![Karbon Create Cluster](../images/karbon-create-cluster.png)
 
-### 3. Download the kubeconfig file
+Choose `Development Cluster` as the type and click `Next`.
+
+![Karbon Development Cluster](../images/karbon-development-cluster.png)
+
+Name it `k8s-demo` and click `Next`.
+
+![K8S Demo Name](../images/k8s-demo.png)
+
+Leave the Node Network as `VM Network` and the number of workers as 1 and click `Next`.
+
+![K8S Demo Resources](../images/k8s-demo-resources.png)
+
+We'll use the default networking provider, so just click `Next`.
+
+![K8s Demo Network Provider](../images/k8s-demo-network-provider.png)
+
+On the Storage Class page, fill in the cluster username and password, leave the rest of the options as their defaults, and click `Create`.
+
+![K8s Demo Storage Class](../images/k8s-demo-storage-class.png)
+
+Click `Create`. You may need to refresh to see the cluster creation status. Now just wait for the cluster to finish deploying.
+
+### 4. Download the kubeconfig file
 
 Congrats, you now have a kubernetes cluster on your Nutanix cluster.
 Download the kuberconfig file via the browser:
@@ -41,7 +63,7 @@ scp kubeconfig -i $(terraform output -raw ssh_private_key) root@$(terraform outp
 
 <screenshot>
 
-### 4. Access the Kubernetes cluster
+### 5. Access the Kubernetes cluster
 
 Now that you have the kubeconfig file on your bastion host, you can access the Kubernetes cluster from your computer. First, SSH into the bastion host:
 
