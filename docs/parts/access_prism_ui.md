@@ -21,23 +21,16 @@ If that command is successful, you will be logged in to the console of your bast
 
 Now that the SSH tunnel is open, you can access the Prism UI from your computer at `https://localhost:9440`.  Note that the Prism UI ships with a self-signed TLS certificate, so most browsers will display a security warning.  This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
 
-<!--
-TODO: a screenshot here?
--->
+![Prism login form](../images/prism-login-form.png)
 
 Log in to the Prism UI using the default credentials [found here on the Nutanix Support Portal](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_7:app-admin-cvm-access-c.html). You will be forced to change the password when you first log in.  After changing the password, you will be automatically logged out.
-
-<!--
-TODO: another screenshot?
--->
 
 
 ### 3. Verify
 
 Log back in with your new password to see the Prism UI.
-<!--
-TODO: point out some Prism UI things here?  Cluster status, licensing warnings, ???
--->
+
+![Prism UI](../images/prism-ui.png)
 
 ## Discussion
 
