@@ -11,10 +11,10 @@ nav:
   - Introduction: index.md
 
   - Parts:
-      - 1. Setup: parts/setup.md
-      - 2. Provision a Nutanix cluster: parts/provision_nutanix_cluster.md
-      - 3. Access the Prism UI: parts/access_prism_ui.md
-      - 4. Create a VM: parts/create_a_vm.md
+      - 1. Setup: parts/1-setup.md
+      - 2. Provision a Nutanix cluster: parts/2-provision_nutanix_cluster.md
+      - 3. Access the Prism UI: parts/3-access_prism_ui.md
+      - 4. Create a VM: parts/4-create_a_vm.md
 
   - Conclusion: parts/conclusion.md
 
