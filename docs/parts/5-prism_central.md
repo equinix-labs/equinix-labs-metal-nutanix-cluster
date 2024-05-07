@@ -54,31 +54,15 @@ Now be patient while Prism Central installs. This can take a while. When finishe
 
 ![Prism Central VM Tab](../images/prism-central-vm-tab.png)
 
-### 4. Reconnect your SSH tunnel to Prism Central
+### 4. Log in to Prism Central and Change its Password
 
-After verifying that Prism Central is installed, you'll need to reconnect with an updated ssh forward command that forwards to the Prism VM. First exit the current SSH tunnel and then run this one:
-
-```sh
-ssh -L 9440:192.168.103.252:9440 -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip)
-```
-
-### 5. Log in to Prism Central and Change its Password
-
-Now that the SSH tunnel is open, you can access the Prism Central UI from your computer at `https://localhost:9440`. Note that the Prism Central UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
+Now we need to login to Prism Central. We recommend doing this in a separate web browser or a Private/Incognito window. You can access the Prism Central UI from your computer at `https://localhost:19440`. Note that the Prism Central UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
 
 Log in to the Prism UI using the default credentials [found here on the Nutanix Support Portal](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_7:app-admin-cvm-access-c.html). You will be forced to change the password when you first log in. After changing the password, you will be automatically logged out.
 
-### 6. Reconnect your SSH tunnel to Prism
+### 4. Register the Prism Central VM
 
-After verifying that Prism Central is installed, you'll need to reconnect back to your main Nutanix host's Prism to register it with Prism Central.
-
-```sh
-$(terraform output -raw ssh_forward_command)
-```
-
-### 7. Register the Prism Central VM
-
-Now that Prism Central is deployed, we need to register the cluster to it. Click on the gear icon in the upper right corner of the Prism UI and select `Prism Central Registration`. Click `Register or create new` and then click `Connect` under `I already have a Prism Central instance deployed`.
+Now that Prism Central is deployed, we need to register the cluster to it. Go back to the original Prism window and click on the gear icon in the upper right corner of the Prism UI and select `Prism Central Registration`. Click `Register or create new` and then click `Connect` under `I already have a Prism Central instance deployed`.
 
 ![Prism Central Registration](../images/prism-central-registration.png)
 
@@ -90,23 +74,9 @@ After a few seconds, registration will complete. You will need to refresh the pa
 
 ![Prism Central Connected](../images/prism-central-connected.png)
 
-### 8. Reconnect your SSH tunnel back to Prism Central
+### 5. Configure Prism Central
 
-Now we can go back to Prism Central and stay there. Exit the current SSH tunnel and then run this one:
-
-```sh
-ssh -L 9440:192.168.103.252:9440 -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip)
-```
-
-### 9. Log in to Prism Central
-
-Now that the SSH tunnel is open, you can access the Prism Central UI from your computer at `https://localhost:9440`. Note that the Prism Central UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
-
-Log in to the Prism UI using the default credentials [found here on the Nutanix Support Portal](https://portal.nutanix.com/page/documents/details?targetId=AHV-Admin-Guide-v6_7:app-admin-cvm-access-c.html). You will be forced to change the password when you first log in. After changing the password, you will be automatically logged out.
-
-### 10. Configure Prism Central
-
-Let's start setting up some basic settings in Prism Central. Start by clicking the gear icon in the upper right corner of the Prism Central UI and selecting `Name Servers` from the settings menu on the left. Then add some public DNS servers to the list, we'll use `1.1.1.1` and `8.8.8.8`.
+Let's start setting up some basic settings in Prism Central. So let's go back to the Prism Central window. Start by clicking the gear icon in the upper right corner of the Prism Central UI and selecting `Name Servers` from the settings menu on the left. Then add some public DNS servers to the list, we'll use `1.1.1.1` and `8.8.8.8`.
 
 ![Name Servers](../images/name-servers.png)
 
