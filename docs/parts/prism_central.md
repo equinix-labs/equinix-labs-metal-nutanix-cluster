@@ -2,7 +2,7 @@
 
 # Part 5: Deploy Prism Central
 
-Many of the more powerful capabilities of Nutanix are only unlocked after configuring Prism Central. In this part of the workshop, we will deploy Prism Central on our Nutanix cluster.
+Many of the more powerful capabilities of Nutanix are only unlocked after configuring [Prism Central](https://portal.nutanix.com/page/documents/details?targetId=Prism-Central-Guide-vpc_2023_4:mul-pc-overview-c.html). In this part of the workshop, we will deploy Prism Central on our Nutanix cluster.
 
 ## Steps
 
