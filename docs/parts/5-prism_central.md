@@ -82,7 +82,7 @@ Now that Prism Central is deployed, we need to register the cluster to it. Click
 
 ![Prism Central Registration](../images/prism-central-registration.png)
 
-Click `Next` on the `Connect Info` page and then put in the Prism Central IP address `192.168.103.252`, port of `9440`, and the username and password you used to log in to Prism. This will be the default Prism password. Click `Next`.
+Click `Next` on the `Connect Info` page and then put in the Prism Central IP address `192.168.103.252`, port of `9440`, and the admin username and password you just set up for Prism Central.
 
 ![Prism Central Registration Config](../images/prism-central-registration-config.png)
 
