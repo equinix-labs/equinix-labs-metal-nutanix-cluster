@@ -31,4 +31,4 @@ This workshop is split into four parts:
 | 4    | [Create a VM](parts/4-create_a_vm.md)                               | 15 minutes |
 | 5    | [Prism Central](parts/5-prism-central.md)                           | 30 minutes |
 | 6    | [Nutanix Kubernetes Engine](parts/6-kubernetes.md)                  | 30 minutes |
-| 5    | [Conclusion](parts/conclusion.md)                                   | 2 minutes  |
+| 7    | [Conclusion](parts/conclusion.md)                                   | 2 minutes  |
