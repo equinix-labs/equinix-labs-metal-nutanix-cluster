@@ -16,7 +16,9 @@ Click the drop-down menu in the top navigation bar in your Prism UI and select t
 In the left-hand navigation, find the "Image Configuration" item and click it.
 
 Click the "Upload Image" button and fill out the form
-that pops up.  Under "Image Source" on the form, select "From URL" and enter `https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img` in the form field (or specify a different image URL of your choosing).
+that pops up.  Under "Image Type" select "DISK."  Under "Image Source" on the form, select "From URL" and enter `https://cloud-images.ubuntu.com/minimal/releases/noble/release/ubuntu-24.04-minimal-cloudimg-amd64.img` in the form field (or specify a different image URL of your choosing).
+
+![Create Image form](../images/create-image.png)
 
 ### 2. Create a VM
 
@@ -26,7 +28,11 @@ Click the "+ Create VM" button and fill out the form that pops up.  For our purp
 
 In the "Add Disk" form, change the "Operation" dropdown to "Clone from Image Service", then ensure that image selected in the "Image" dropdown is the one you created in the previous step. Click the "Add" button to add the disk configuration to your VM and return to the "Create VM" form.
 
+![Add Disk form](../images/create-vm-add-disk.png)
+
 In order to connect to the VM console, we need to add a user that can log in with a password.  We will use a `cloud-init` config to do that.  Scroll down to the bottom of the "Create VM" form, check the "Custom Script" box, then select the "Type or Paste Script" radio button so that you can add your `cloud-init` script.
+
+![Add cloud-init to Create VM form](../images/vm-cloud-init.png)
 
 We'll pass in a `cloud-init` that adds a user named "workshop" with the password "ubuntu":
 
@@ -45,7 +51,11 @@ Click the "Save" button and Nutanix will start creating your VM.
 
 When Nutanix finishes creating your VM, you will have to turn it on.  Click the VM name in the table view and then scroll down to see the VM details.  Click the "Power On" link and wait for your VM to power on.
 
+![Power on VM](../images/vm-power-on.png)
+
 When your VM finishes powering on, click the "Launch Console" button to open the VM console.  Enter the username "workshop" and the password "ubuntu" at the prompt and you will have an open terminal session on your VM.  Try out some of your favorite commands, and when you're done, close the VM console and click the "Delete" button in the Prism UI to delete your VM.
+
+![VM Console](../images/vm-console.png)
 
 ## Discussion
 
