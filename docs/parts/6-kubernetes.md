@@ -14,7 +14,7 @@ Let's login to the Prism Central UI from your computer at `https://localhost:944
 
 Navigate to LCM take an Invenotry, wait for it to finish and then Navigate to Software -> Updates.
 
-We recommend updating everything the Nutanix Kubernetes Engine.
+We recommend updating the Nutanix Kubernetes Engine.
 
 ### 3. Deploy Nutanix Kubernetes Engine
 
