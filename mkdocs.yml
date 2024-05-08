@@ -17,7 +17,8 @@ nav:
       - 4. Create a VM: parts/4-create_a_vm.md
       - 5. Prism Central: parts/5-prism_central.md
       - 6. Kubernetes: parts/6-kubernetes.md
-      - Conclusion: parts/conclusion.md
+
+  - Conclusion: parts/conclusion.md
 
 theme:
   name: material
