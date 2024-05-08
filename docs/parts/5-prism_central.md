@@ -86,15 +86,9 @@ Next click on NTP Servers on the left and add a local NTP pool server for the re
 
 In the next part we'll deploy another piece of the Nutanix stack onto the cluster.
 
-### 11. Wait for update to complete and continue to next Part
-
-In the next part we'll deploy another piece of the Nutanix stack onto the cluster.
-
 ## Discussion
 
 Before proceeding to the next part let's take a few minutes to discuss what we did. Here are some questions to start the discussion.
 
 - What is Prism Central?
 - What can you do with Prism Central that you couldn't do with just Prism?
-- What is the LCM and why is it important to keep it updated?
-- Why do we need to use a new SSH forward command after installing Prism Central?
