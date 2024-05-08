@@ -85,6 +85,12 @@ Then, set the `KUBECONFIG` environment variable to point to the kubeconfig file:
 export KUBECONFIG=$(pwd)/kubeconfig
 ```
 
+Install kubectl (shown here via snap):
+
+```sh
+snap install kubectl --classic
+```
+
 Now you can use `kubectl` to interact with your Kubernetes cluster:
 
 ```sh
