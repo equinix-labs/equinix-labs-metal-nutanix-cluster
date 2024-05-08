@@ -82,7 +82,7 @@ ssh -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bas
 Then, set the `KUBECONFIG` environment variable to point to the kubeconfig file:
 
 ```sh
-export KUBECONFIG=$(PWD)/kubeconfig
+export KUBECONFIG=$(pwd)/kubeconfig
 ```
 
 Now you can use `kubectl` to interact with your Kubernetes cluster:
