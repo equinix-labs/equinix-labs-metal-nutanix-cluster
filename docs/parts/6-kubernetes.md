@@ -8,21 +8,21 @@ Nutanix Kubernetes Engine (NKE) is a managed Kubernetes service that simplifies 
 
 ### 1. Open Prism UI
 
-Let's login to the Prism Central UI from your computer at `https://localhost:9440`. Note that the Prism UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
+Let's login to the Prism Central UI from your computer at `https://localhost:19440`. Note that the Prism UI ships with a self-signed TLS certificate, so most browsers will display a security warning. This security warning is unavoidable. If your browser will allow you to ignore the warning and load the site, do that; if not, try a different browser.
 
 ### 3. Enable Kubernetes Engine
 
-Click on the three lined menu in the upper left of the Prism Central UI and select `Services` -> `Kubernetes`. Then click `Enable Karbn` or `Enable Kubernetes`. Which one you'll see depends on the version of the Nutanix Kubernetes Engine you have installed, which we'll be updating anyway in the next step. After a while it will start up and tell you there are no kubernetes clusters. That's fine, continue on to the next step.
+Click on the three lined menu in the upper left of the Prism Central UI and select `Services` -> `Kubernetes`. Then click `Enable Karbon` or `Enable Kubernetes`. Which one you'll see depends on the version of the Nutanix Kubernetes Engine you have installed, which we'll be updating anyway in the next step. After a while it will start up and tell you there are no kubernetes clusters. That's fine, continue on to the next step.
 
 ![No Kubernetes Clusters](../images/no-k8s-clusters.png)
 
 ### 2. Update the Cluster
 
-Navigate to LCM take an Inventory and wait for it to finish.
+Click on the three lined menu in the upper left of the Prism Central UI and select `Administration` -> `LCM`. Then click the `Inventory` tab and choose `Perform Inventory`. You can leave the `Enable Auto Inventory` checkbox unselected for now. Click `Proceed`.
 
 The inventory may take a long time to complete and afterwards you will likely need to refresh the page.
 
-Then navigate to the `Software` -> `Updates` page.
+Then navigate to the `Updates` -> `Software` tab.
 
 We need to update the Nutanix Kubernetes Engine, you can also update other components like NCC while you are here.
 
