@@ -68,7 +68,7 @@ Download the kuberconfig file via the browser:
 Transfer it to your bastion host:
 
 ```sh
-scp k8s-demo-kubectl.cfg -i $(terraform output -raw ssh_private_key) root@$(terraform output -raw bastion_public_ip):~/kubeconfig
+scp -i $(terraform output -raw ssh_private_key) <path-to-downloads>/k8s-demo-kubectl.cfg root@$(terraform output -raw bastion_public_ip):~/kubeconfig
 ```
 
 ### 5. Access the Kubernetes cluster
