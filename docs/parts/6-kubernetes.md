@@ -52,7 +52,7 @@ We'll use the default networking provider, so just click `Next`.
 
 ![K8s Demo Network Provider](../images/k8s-demo-network-provider.png)
 
-On the Storage Class page, fill in the cluster username and password, leave the rest of the options as their defaults, and click `Create`.
+On the Storage Class page, leave the options as their defaults, and click `Create`.
 
 ![K8s Demo Storage Class](../images/k8s-demo-storage-class.png)
 
