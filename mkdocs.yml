@@ -15,6 +15,8 @@ nav:
       - 2. Provision a Nutanix cluster: parts/2-provision_nutanix_cluster.md
       - 3. Access the Prism UI: parts/3-access_prism_ui.md
       - 4. Create a VM: parts/4-create_a_vm.md
+      - 5. Prism Central: parts/5-prism_central.md
+      - 6. Kubernetes: parts/6-kubernetes.md
 
   - Conclusion: parts/conclusion.md
 

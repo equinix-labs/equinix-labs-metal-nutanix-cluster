@@ -1,13 +1,14 @@
 <!-- See https://squidfunk.github.io/mkdocs-material/reference/ -->
+
 # Part 1: Setup
 
 ## Steps
 
 ### 1. Account Setup and Terraform Install
 
-This workshop assumes working knowledge of Equinix Metal and Terraform.  If you are not already familiar with those, we recommend that you complete the [Terraform on Equinix Metal](https://equinix-labs.github.io/terraform-on-equinix-workshop) workshop before proceeding with this workshop.
+This workshop assumes working knowledge of Equinix Metal and Terraform. If you are not already familiar with those, we recommend that you complete the [Terraform on Equinix Metal](https://equinix-labs.github.io/terraform-on-equinix-workshop) workshop before proceeding with this workshop.
 
-In particular, this workshop assumes that you already have an Equinix Metal account and understand how to create an Equinix Metal API token and pass it in to Terraform.  If you need a refresher on any of those steps, you may refer to the [Account Setup and Terraform Install](https://equinix-labs.github.io/terraform-on-equinix-workshop/parts/install/#part-1-account-setup-and-terraform-install) section of the Terraform workshop.
+In particular, this workshop assumes that you already have an Equinix Metal account and understand how to create an Equinix Metal API token and pass it in to Terraform. If you need a refresher on any of those steps, you may refer to the [Account Setup and Terraform Install](https://equinix-labs.github.io/terraform-on-equinix-workshop/parts/install/#part-1-account-setup-and-terraform-install) section of the Terraform workshop.
 
 ### 2. Obtain Terraform configuration
 
